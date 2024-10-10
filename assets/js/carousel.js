@@ -34,11 +34,11 @@ function generateCarouselItems(convenios) {
         const itemsGroup = convenios.slice(i, i + 4);
         const isActive = i === 0 ? 'active' : '';
         carouselItems += `<div class="carousel-item ${isActive}">
-                          <div class="d-flex justify-content-center align-items-center">`;
+                          <div class="d-flex justify-content-center align-items-center flex-wrap">`;
 
         itemsGroup.forEach(item => {
-            carouselItems += `<a href="${item.link}" target="_blank" class="d-block">
-                            <img src="${item.src}" alt="${item.alt}">
+            carouselItems += `<a href="${item.link}" target="_blank" class="d-block mx-2 my-2">
+                            <img src="${item.src}" alt="${item.alt}" class="img-fluid" style="max-width: 150px; height: auto;">
                           </a>`;
         });
         carouselItems += `</div></div>`;
