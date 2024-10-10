@@ -1,0 +1,25 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+}
+
+.carousel-item img {
+    max-width: 200px;
+    height: auto;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 200px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 20px;
+}
